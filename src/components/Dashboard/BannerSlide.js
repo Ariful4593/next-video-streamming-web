@@ -8,6 +8,8 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import Styles from './SwipperSlide.module.css'
 export const BannerSlide = () => {
     return (
@@ -22,32 +24,32 @@ export const BannerSlide = () => {
             {
                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => {
                     return <SwiperSlide key={index}>
-                        <div className='row'  style={{
+                        <div className='row' style={{
                             backgroundImage: `url(https://picsum.photos/1920/1080?random=${item})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            aspectRatio: '5/2',
-                            borderRadius: '10px',
+                            aspectRatio: '5/3',
+                            // borderRadius: '10px',
                             backgroundRepeat: 'no-repeat',
+                            margin: '0px'
                         }}>
-                            <div className={`col-6 ${Styles.banner_content}`}>
+                            <div className={`col-7 p-5 ${Styles.banner_content}`}>
                                 <h1>Movie Title</h1>
                                 {/* Ratings */}
                                 <div className={Styles.ratings}>
                                     <div className={Styles.rating}>
-                                        <span>IMDB</span>
-                                        <span>8.5</span>
+                                        <ul>
+                                            <li>*</li>
+                                            <li>*</li>
+                                            <li>*</li>
+                                            <li>*</li>
+                                        </ul>
+                                        <span className='text-white ml-2'>4.7(IMDB)</span>
                                     </div>
-                                    <div className={Styles.rating}>
-                                        <span>TMDB</span>
-                                        <span>8.5</span>
+                                    <div className='d-flex align-items-center ml-2'>
+                                        <span className='badge badge-secondary p-2'>16+</span>
+                                        <span className='ml-3'>2hrs : 40mins</span>
                                     </div>
-                                </div>
-                                {/* Genres */}
-                                <div className={Styles.genres}>
-                                    <span>Action</span>
-                                    <span>Thriller</span>
-                                    <span>Sci-Fi</span>
                                 </div>
                                 {/* Description */}
                                 <div className={Styles.description}>
@@ -55,16 +57,30 @@ export const BannerSlide = () => {
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatibus incidunt in nihil sapiente, cum magnam quibusdam molestiae debitis velit vitae minus reiciendis! Fugit dolores laudantium, sint ducimus vel nesciunt.
                                     </p>
                                 </div>
-                                {/* Buttons */}
-                                <div className={Styles.buttons}>
-                                    <button className={Styles.play_button}>
-                                        <i className="fas fa-play"></i>
-                                        <span>Play</span>
-                                    </button>
-                                    <button className={Styles.watchlist_button}>
-                                        <i className="fas fa-plus"></i>
-                                        <span>Watchlist</span>
-                                    </button>
+
+                                {/* Starring, Genres, Tag */}
+                                <div className={Styles.starring_genres_tag}>
+                                    <div className={Styles.starring}>
+                                        <span className={Styles.starring_title}>Starring:</span>
+                                        <span className={`ml-2 ${Styles.star_name}`}>John Doe</span>
+                                    </div>
+                                    <div className={Styles.genres}>
+                                        <span className={Styles.starring_title}>Genres:</span>
+                                        <span className={`ml-2 ${Styles.star_name}`}>Action</span>
+                                    </div>
+                                    <div className={Styles.tag}>
+                                        <span className={Styles.starring_title}>Tag:</span>
+                                        <span className={`ml-2 ${Styles.star_name}`}>Action</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`col-5 ${Styles.banner_content}`}>
+                                {/* Video play icon with animation */}
+                                <div className={Styles.play_now_div}>
+                                    <div className={Styles.video_icon}>
+                                        <FontAwesomeIcon icon={faPlayCircle} />
+                                    </div>
+                                    <h1>Watch Trailer</h1>
                                 </div>
                             </div>
                         </div>

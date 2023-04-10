@@ -4,18 +4,19 @@
 }
 
 .banner_content{
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translate(-50%, -50%); */
+    /* text-align: center; */
     color: #fff;
 }
 
 .banner_content h1{
-    font-size: 50px;
+    font-size: 5em;
     font-weight: 700;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .banner_content p{
@@ -43,20 +44,44 @@
 .ratings{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 20px;
 }
 
 .rating{
+    display: flex;
     font-size: 20px;
     color: #fff;
     margin-right: 5px;
 }
-
+.rating ul{
+    margin: 0;
+    padding: 0;
+}
+.rating ul li{
+    display: inline;
+    padding: 5px;
+}
+.rating span{
+    margin-left: 10px;
+}
 .genres{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+}
+
+.starring, .starring_title{
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.starring .star_name{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 10px;
 }
 
 .description{
@@ -91,6 +116,33 @@
 .buttons button:last-child{
     background-color: #000;
     color: #fff;
+}
+
+.play_now_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.play_now_div h1{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    /*text space between */
+    letter-spacing: 4px;
+}
+
+.play_now_div .video_icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px){

@@ -18,11 +18,11 @@ export default function Home() {
       <main
         className={styles.main}
       >
-        <div className="container">
-          <Header />
-          <Banner />
-          <LatestMovies />
-        </div>
+        <Header />
+        <Banner />
+        <LatestMovies label='Latest Movies' />
+        <LatestMovies label='Upcoming Movies' />
+        <LatestMovies label='Suggested For You' />
         {/* 
         <div className={styles.center}>
           <Image
