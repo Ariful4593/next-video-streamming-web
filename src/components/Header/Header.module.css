@@ -1,0 +1,34 @@
+/* .logo_part{
+    background-color: red;
+}
+.menu_part ul{
+    background-color: blue;
+} */
+.menu_part li {
+    list-style-type: none;
+    display: inline;
+    padding: 12px;
+    font-size: 17px;
+}
+
+.menu_part li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile_part {
+    text-align: end;
+}
+
+.profile_part svg {
+    width: 20px;
+    cursor: pointer;
+    margin-right: 25px;
+    color: orange
+}
+
+/* svg {
+    width: 200px;
+    height: 200px;
+} */
