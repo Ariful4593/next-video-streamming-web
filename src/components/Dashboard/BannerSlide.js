@@ -1,16 +1,13 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import required modules
 import { Pagination, Navigation } from "swiper";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import Styles from './SwipperSlide.module.css'
+import { Ratings } from '@/ui/Ratings/Ratings';
 export const BannerSlide = () => {
     return (
         <Swiper
@@ -37,15 +34,7 @@ export const BannerSlide = () => {
                                 <h1>Movie Title</h1>
                                 {/* Ratings */}
                                 <div className={Styles.ratings}>
-                                    <div className={Styles.rating}>
-                                        <ul>
-                                            <li>*</li>
-                                            <li>*</li>
-                                            <li>*</li>
-                                            <li>*</li>
-                                        </ul>
-                                        <span className='text-white ml-2'>4.7(IMDB)</span>
-                                    </div>
+                                    <Ratings ratings={4} />
                                     <div className='d-flex align-items-center ml-2'>
                                         <span className='badge badge-secondary p-2'>16+</span>
                                         <span className='ml-3'>2hrs : 40mins</span>

@@ -19,11 +19,11 @@ export default function LatestMoviesSlider() {
         <>
             <Swiper
                 slidesPerView={4}
-                centeredSlides={true}
+                // centeredSlides={true}
                 spaceBetween={50}
-                pagination={{
-                    type: "fraction",
-                }}
+                // pagination={{
+                //     type: "fraction",
+                // }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"

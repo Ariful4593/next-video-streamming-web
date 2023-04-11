@@ -7,6 +7,7 @@ import 'swiper/css';
 import { LatestMovies } from '@/components/Dashboard/LatestMovies';
 import { TopTenMovies } from '@/components/Dashboard/TopTenMovies/TopTenMovies';
 import { ParallaxBanner } from '@/components/Dashboard/Banner/ParallaxBanner';
+import { Footer } from '@/components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
         <LatestMovies label='Suggested For You' />
         <ParallaxBanner />
         <LatestMovies label='Trending' />
+        <LatestMovies label='Recomended For You' />
+        <Footer />
         {/* 
         <div className={styles.center}>
           <Image

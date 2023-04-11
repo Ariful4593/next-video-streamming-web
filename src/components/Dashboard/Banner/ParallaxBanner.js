@@ -1,8 +1,7 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
 import Styles from './ParallaxBannar.module.css'
 import { PlayNowBtn } from '@/ui/PlayNowBtn/PlayNowBtn'
+import { Ratings } from '@/ui/Ratings/Ratings'
 export const ParallaxBanner = () => {
     return (
         <section id={Styles.parallex} className={Styles.parallax_window}>
@@ -14,15 +13,7 @@ export const ParallaxBanner = () => {
                                 <h1>Movie Title</h1>
                                 {/* Ratings */}
                                 <div className={Styles.ratings}>
-                                    <div className={Styles.rating}>
-                                        <ul>
-                                            <li><FontAwesomeIcon icon={faStar} /></li>
-                                            <li><FontAwesomeIcon icon={faStar} /></li>
-                                            <li><FontAwesomeIcon icon={faStar} /></li>
-                                            <li><FontAwesomeIcon icon={faStar} /></li>
-                                        </ul>
-                                        <span className='text-white ml-2'>4.7(IMDB)</span>
-                                    </div>
+                                    <Ratings />
                                     <div className='d-flex align-items-center ml-2'>
                                         <span className='badge badge-secondary p-2'>16+</span>
                                         <span className='ml-3'>2hrs : 40mins</span>
