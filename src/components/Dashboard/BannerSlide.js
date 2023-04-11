@@ -1,9 +1,9 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import Styles from './SwipperSlide.module.css'
@@ -11,16 +11,15 @@ import { Ratings } from '@/ui/Ratings/Ratings';
 export const BannerSlide = () => {
     return (
         <Swiper
-            pagination={{
-                type: "progressbar",
-            }}
             navigation={true}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
+            modules={[Navigation]}
+            className={`mySwiper ${Styles.swiper}`}
         >
             {
                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => {
-                    return <SwiperSlide key={index}>
+                    return <SwiperSlide key={index}
+                        className={Styles.swiper_slide}
+                    >
                         <div className='row' style={{
                             backgroundImage: `url(https://picsum.photos/1920/1080?random=${item})`,
                             backgroundSize: 'cover',
@@ -29,7 +28,8 @@ export const BannerSlide = () => {
                             // borderRadius: '10px',
                             backgroundRepeat: 'no-repeat',
                             margin: '0px'
-                        }}>
+                        }}
+                        >
                             <div className={`col-7 p-5 ${Styles.banner_content}`}>
                                 <h1>Movie Title</h1>
                                 {/* Ratings */}
