@@ -1,7 +1,8 @@
-.menu_part ul{
+.menu_part ul {
     margin: 0;
     padding: 0;
 }
+
 .menu_part li {
     list-style-type: none;
     display: inline;
@@ -15,6 +16,11 @@
     cursor: pointer;
 }
 
+.submenu ul{
+    margin: 0;
+    padding: 0;
+}
+
 .profile_part {
     text-align: end;
 }
@@ -26,19 +32,53 @@
     color: orange
 }
 
-/* screen 1192 -> 1199 */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    .logo_part{
+/* screen 1200 >  */
+@media screen and (min-width: 1200px) {
+    .small_device {
+        display: none;
+    }
+
+    .logo_part {
         text-align: center;
     }
 
     .menu_part {
         text-align: center;
     }
-    .menu_part ul{
+
+    .menu_part ul {
         margin: 0;
         padding: 0;
     }
+
+    .menu_part li {
+        padding: 10px;
+    }
+
+    .profile_part {
+        text-align: end;
+    }
+}
+
+/* screen 1192 -> 1199 */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .small_device {
+        display: none;
+    }
+
+    .logo_part {
+        text-align: center;
+    }
+
+    .menu_part {
+        text-align: center;
+    }
+
+    .menu_part ul {
+        margin: 0;
+        padding: 0;
+    }
+
     .menu_part li {
         padding: 10px;
     }
@@ -50,21 +90,200 @@
 
 /* screen 768 -> 991 */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .logo_part{
+    .container {
+        width: 100%;
+    }
+    .large_device {
+        display: none;
+    }
+    
+    .submenu {
+        background-color: #fff;
+        color: #000;
+        padding: 10px;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        z-index: 2;
+    }
+
+    .submenu li {
+        list-style-type: none;
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .submenu li a {
+        text-decoration: none;
+        color: #000 !important;
+        cursor: pointer;
+    }
+
+    .submenu li a:hover {
+        color: red;
+        background-color: #000;
+    }
+
+    .submenu li:hover .submenu {
+        display: block;
+    }
+
+    .logo_part {
         text-align: center;
         /* width: 50px; */
     }
-    .logo_part img{
+
+    .logo_part img {
         width: 100%;
     }
 
     .menu_part {
         text-align: center;
     }
-    .menu_part ul{
+
+    .menu_part ul {
         margin: 0;
         padding: 0;
     }
+
+    .menu_part li {
+        padding: 10px;
+    }
+
+    .profile_part {
+        text-align: end;
+    }
+}
+
+/* screen 576 -> 767 */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    .large_device {
+        display: none;
+    }
+
+    .submenu {
+        background-color: #fff;
+        color: #000;
+        padding: 10px;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        z-index: 2;
+    }
+
+    .submenu li {
+        list-style-type: none;
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .submenu li a {
+        text-decoration: none;
+        color: #000 !important;
+        cursor: pointer;
+    }
+
+    .submenu li a:hover {
+        color: red;
+        background-color: #000;
+    }
+
+    .submenu li:hover .submenu {
+        display: block;
+    }
+
+    .logo_part {
+        text-align: center;
+        /* width: 50px; */
+    }
+
+    .logo_part img {
+        width: 100%;
+    }
+
+    .menu_part {
+        text-align: center;
+    }
+
+    .menu_part ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu_part li {
+        padding: 10px;
+    }
+
+    .profile_part {
+        text-align: end;
+    }
+}
+
+/* screen 0 -> 575 */
+@media screen and (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+    .large_device {
+        display: none;
+    }
+
+    .submenu {
+        background-color: #fff;
+        color: #000;
+        padding: 10px;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        z-index: 2;
+    }
+
+    .submenu li {
+        list-style-type: none;
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .submenu li a {
+        text-decoration: none;
+        color: #000 !important;
+        cursor: pointer;
+    }
+
+    .submenu li a:hover {
+        color: red;
+        background-color: #000;
+    }
+
+    .submenu li:hover .submenu {
+        display: block;
+    }
+
+    .logo_part {
+        text-align: center;
+        /* width: 50px; */
+    }
+
+    .logo_part img {
+        width: 100%;
+    }
+
+    .menu_part {
+        text-align: center;
+    }
+
+    .menu_part ul {
+        margin: 0;
+        padding: 0;
+    }
+
     .menu_part li {
         padding: 10px;
     }
