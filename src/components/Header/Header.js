@@ -5,10 +5,11 @@ import Image from 'next/image'
 import logo from '../../images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faBell, faUser } from '@fortawesome/free-solid-svg-icons'
+import { BurgerMenu } from '@/ui/BurgerMenu/BurgerMenu'
 export const Header = () => {
     return (
         <div className="container  ">
-                <div className='row mt-4'>
+                <div className='row mt-4 mb-4'>
                     <div className={`col-3 ${Styles.logo_part}`}>
                         <Image
                             className={Styles.logo}
@@ -19,6 +20,7 @@ export const Header = () => {
                             priority
                         />
                     </div>
+                    {/* <BurgerMenu/> */}
                     <div className={`col-6 ${Styles.menu_part}`}>
                         <ul>
                             <li><Link href='/'>Home</Link></li>
@@ -30,12 +32,6 @@ export const Header = () => {
                         </ul>
                     </div>
                     <div className={`col-3 ${Styles.profile_part}`}>
-                        {/* 
-                    Here will be 3 icons:
-                    1. Search
-                    2. Notification
-                    3. Profile
-                */}
                         <FontAwesomeIcon className='icon' icon={faSearch} />
                         <FontAwesomeIcon className='icon' icon={faBell} />
                         <FontAwesomeIcon className='icon' icon={faUser} />

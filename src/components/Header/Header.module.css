@@ -1,9 +1,3 @@
-/* .logo_part{
-    background-color: red;
-}
-.menu_part ul{
-    background-color: blue;
-} */
 .menu_part li {
     list-style-type: none;
     display: inline;
@@ -28,7 +22,50 @@
     color: orange
 }
 
-/* svg {
-    width: 200px;
-    height: 200px;
-} */
+/* screen 1192 -> 1199 */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .logo_part{
+        text-align: center;
+    }
+
+    .menu_part {
+        text-align: center;
+    }
+    .menu_part ul{
+        margin: 0;
+        padding: 0;
+    }
+    .menu_part li {
+        padding: 10px;
+    }
+
+    .profile_part {
+        text-align: end;
+    }
+}
+
+/* screen 768 -> 991 */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .logo_part{
+        text-align: center;
+        /* width: 50px; */
+    }
+    .logo_part img{
+        width: 100%;
+    }
+
+    .menu_part {
+        text-align: center;
+    }
+    .menu_part ul{
+        margin: 0;
+        padding: 0;
+    }
+    .menu_part li {
+        padding: 10px;
+    }
+
+    .profile_part {
+        text-align: end;
+    }
+}
