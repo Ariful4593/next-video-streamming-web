@@ -4,10 +4,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../../images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faBell, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faSearch, faBell, faUser, faDotCircle } from '@fortawesome/free-solid-svg-icons'
 import { BurgerMenu } from '@/ui/BurgerMenu/BurgerMenu'
 export const Header = () => {
     const [active, setActive] = React.useState('');
+    const [threeDot, setThreeDot] = React.useState(false);
     return (
         <div className={`${Styles.container} container`}>
             <div className={`row mt-4 mb-4 ${Styles.large_device}`}>
@@ -43,7 +44,7 @@ export const Header = () => {
                 </div>
 
                 {/* Submenu for when clicked burger menu */}
-                <div className={`col-12 ${Styles.submenu} ${active ? 'd-block' : 'd-none'}`}>
+                <div className={`col-12 ${Styles.submenu} ${active ? 'd-block' : 'd-none'} ${threeDot ? 'mt-4' : ''}`}>
                     <ul>
                         <li><Link href='/'>Home</Link></li>
                         <li><Link href='/movies'>Movies</Link></li>
@@ -65,6 +66,17 @@ export const Header = () => {
                     />
                 </div>
                 <div className={`col-4 ${Styles.profile_part}`}>
+                    <FontAwesomeIcon className='icon' icon={faSearch} />
+                    <FontAwesomeIcon className='icon' icon={faBell} />
+                    <FontAwesomeIcon className='icon' icon={faUser} />
+                </div>
+
+                <div className={`col-4 ${Styles.profile_part_sm_btn}`}>
+                    <span className='text-white' onClick={() => setThreeDot(prev => !prev)}>...</span>
+                </div>
+
+                <div className={`col-12  ${Styles.profile_part_small_device} ${threeDot ? 'd-block' : 'd-none'}`}>
+                    {/* <input type="text" className='form-control' /> */}
                     <FontAwesomeIcon className='icon' icon={faSearch} />
                     <FontAwesomeIcon className='icon' icon={faBell} />
                     <FontAwesomeIcon className='icon' icon={faUser} />

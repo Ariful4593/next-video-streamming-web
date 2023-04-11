@@ -16,7 +16,7 @@
     cursor: pointer;
 }
 
-.submenu ul{
+.submenu ul {
     margin: 0;
     padding: 0;
 }
@@ -30,6 +30,10 @@
     cursor: pointer;
     margin-right: 25px;
     color: orange
+}
+
+.profile_part_sm_btn {
+    display: none;
 }
 
 /* screen 1200 >  */
@@ -93,10 +97,11 @@
     .container {
         width: 100%;
     }
+
     .large_device {
         display: none;
     }
-    
+
     .submenu {
         background-color: #fff;
         color: #000;
@@ -161,6 +166,7 @@
     .container {
         width: 100%;
     }
+
     .large_device {
         display: none;
     }
@@ -230,6 +236,7 @@
         max-width: 100%;
         width: 100%;
     }
+
     .large_device {
         display: none;
     }
@@ -291,4 +298,40 @@
     .profile_part {
         text-align: end;
     }
+}
+
+
+
+@media screen and (max-width: 476px) {
+    .profile_part {
+        display: none;
+    }
+
+    .profile_part_sm_btn {
+        display: block;
+        text-align: end;
+    }
+
+    .profile_part_sm_btn span {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .profile_part_small_device {
+        position: absolute;
+        text-align: end;
+        top: 84px;
+        z-index: 2;
+        background: #474242;
+        height: 50px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .profile_part_small_device svg {
+        width: 20px;
+        cursor: pointer;
+        margin-right: 25px;
+        color: orange
+    }
+
 }
