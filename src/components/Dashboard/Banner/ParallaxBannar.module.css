@@ -1,26 +1,26 @@
-.slider_image{
+.slider_image {
     width: 100%;
     aspect-ratio: 5/2;
 }
 
-.banner_content{
+.banner_content {
     color: #fff;
 }
 
-.banner_content h1{
+.banner_content h1 {
     font-size: 5em;
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-.banner_content p{
+.banner_content p {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.banner_content button{
+.banner_content button {
     padding: 10px 20px;
     background-color: #fff;
     color: #000;
@@ -31,62 +31,72 @@
     font-weight: 500;
 }
 
-.banner_content button:hover{
+.banner_content button:hover {
     background-color: #000;
     color: #fff;
 }
 
-.ratings{
+.ratings {
     display: flex;
     align-items: center;
     /* justify-content: center; */
     margin-bottom: 20px;
 }
 
-.rating{
+.rating {
     display: flex;
     font-size: 20px;
     color: #fff;
     margin-right: 5px;
 }
-.rating ul{
+
+.rating ul {
     margin: 0;
     padding: 0;
 }
-.rating ul li{
+
+.rating ul li {
     display: inline;
     padding: 5px;
 }
-.rating span{
+
+.rating ul li svg {
+    color: yellow;
+    width: 20px;
+}
+
+.rating span {
     margin-left: 10px;
 }
 
-.starring, .starring_title{
+
+.starring,
+.starring_title {
     color: red;
     font-size: 20px;
     font-weight: 500;
 }
 
-.starring .star_name{
+.starring .star_name {
     color: #fff;
     font-size: 20px;
     font-weight: 400;
     margin-right: 10px;
 }
 
-.description{
+.description {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.buttons button{
+.buttons button {
     padding: 10px 20px;
     background-color: #fff;
     color: #000;
@@ -98,81 +108,89 @@
     margin-right: 10px;
 }
 
-.buttons button:hover{
+.buttons button:hover {
     background-color: #000;
     color: #fff;
 }
 
-.buttons button:last-child{
+.buttons button:last-child {
     background-color: #000;
     color: #fff;
 }
 
-.play_now_div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.play_now_div h1{
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    /*text space between */
-    letter-spacing: 4px;
-}
-
-.play_now_div .video_icon{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px){
-    .banner_content h1{
+@media screen and (max-width: 768px) {
+    .banner_content h1 {
         font-size: 30px;
     }
-    .banner_content p{
+
+    .banner_content p {
         font-size: 15px;
     }
-    .banner_content button{
+
+    .banner_content button {
         font-size: 15px;
     }
-    .rating{
+
+    .rating {
         font-size: 15px;
     }
-    .description{
+
+    .description {
         font-size: 15px;
     }
-    .buttons button{
+
+    .buttons button {
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 480px){
-    .banner_content h1{
+@media screen and (max-width: 480px) {
+    .banner_content h1 {
         font-size: 20px;
     }
-    .banner_content p{
+
+    .banner_content p {
         font-size: 10px;
     }
-    .banner_content button{
+
+    .banner_content button {
         font-size: 10px;
     }
-    .rating{
+
+    .rating {
         font-size: 10px;
     }
-    .description{
+
+    .description {
         font-size: 10px;
     }
-    .buttons button{
+
+    .buttons button {
         font-size: 10px;
     }
+}
+
+.parallax_window {
+    /* background-image: url("https://picsum.photos/1920/1080?random=1"); */
+    height: 100%;
+    /* padding: 6.25em 0; */
+    position: relative;
+    background: url('https://picsum.photos/1920/1080?random=1')center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.movie_sub_image_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.movie_sub_image_div img {
+    width: 520px !important;
+    height: 350px !important;
+    object-fit: cover;
 }

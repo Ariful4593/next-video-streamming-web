@@ -8,7 +8,7 @@ export const PlayNowBtn = () => {
             <div className={Styles.video_icon}>
                 <FontAwesomeIcon icon={faPlayCircle} />
             </div>
-            <h1>Play Now</h1>
+            <h1 className={Styles.play_now_label}>Play Now</h1>
         </div>
     )
 }
