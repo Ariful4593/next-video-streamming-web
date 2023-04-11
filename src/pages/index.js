@@ -5,6 +5,7 @@ import { Header } from '@/components/Header/Header'
 import { Banner } from '@/components/Dashboard/Banner'
 import 'swiper/css';
 import { LatestMovies } from '@/components/Dashboard/LatestMovies';
+import { TopTenMovies } from '@/components/Dashboard/TopTenMovies/TopTenMovies';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Banner />
         <LatestMovies label='Latest Movies' />
         <LatestMovies label='Upcoming Movies' />
+        <TopTenMovies />
         <LatestMovies label='Suggested For You' />
         {/* 
         <div className={styles.center}>
