@@ -31,8 +31,8 @@ export const Header = () => {
     }
 
     return (
-        <div className={`${Styles.container} container`}>
-            <div className={`row mt-4 mb-4 ${Styles.large_device}`}>
+        <div className={`${Styles.container} container`} id={Styles.header_container}>
+            <div className={`row p-3 ${Styles.large_device}`}>
                 <div className={`col-3 ${Styles.logo_part}`}>
                     <Image
                         className={Styles.logo}
