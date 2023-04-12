@@ -80,3 +80,60 @@
     }
 
 }
+
+@media screen and (max-width: 575px) {
+    .rating ul li svg {
+        width: 15px;
+    }
+
+    .rating span {
+        font-size: 15px;
+    }
+
+    .rating {
+        font-size: 15px;
+    }
+
+    .rating ul li {
+        padding: 3px;
+    }
+
+    .rating ul li svg {
+        width: 15px;
+    }
+
+    .rating span {
+        font-size: 13px;
+        margin-top: 4px;
+    }
+
+}
+
+/* screen < 351 */
+@media screen and (max-width: 350px) {
+    .rating ul li svg {
+        width: 15px;
+    }
+
+    .rating span {
+        font-size: 15px;
+    }
+
+    .rating {
+        font-size: 15px;
+    }
+
+    .rating ul li {
+        padding: 3px;
+    }
+
+    .rating ul li svg {
+        width: 15px;
+    }
+
+    .rating span {
+        font-size: 13px;
+        margin-top: 4px;
+    }
+
+}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import "swiper/css";
 import styles from "./VerticalSliderWithThumb.module.css";
 import { MovieThumbnailSm } from "@/ui/MovieThumbnailSm/MovieThumbnailSm";
+import { useWindowWidth } from "@/hooks/useWindowWidth";
 
 const slides = [
     "https://picsum.photos/1920/1080",
@@ -15,6 +16,7 @@ const slides = [
 
 export default function VerticalSliderWithThumb() {
     const [imagesNavSlider, setImagesNavSlider] = useState(null);
+    const preview = useWindowWidth();
 
     return (
         <div className={styles.styles}>
@@ -30,7 +32,9 @@ export default function VerticalSliderWithThumb() {
                                 onSwiper={setImagesNavSlider}
                                 direction="vertical"
                                 spaceBetween={24}
-                                slidesPerView={3}
+                                slidesPerView={
+                                    preview < 620 ? 1 : preview < 768 ? 2 : preview < 992 ? 3 : 4   
+                                }
                                 navigation={{
                                     nextEl: "#imagesNavNext",
                                     prevEl: "#imagesNavPrev",

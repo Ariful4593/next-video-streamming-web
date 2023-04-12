@@ -9,7 +9,7 @@ export const ParallaxBanner = () => {
                 <div className='row mt-4'>
                     <div className="col-12">
                         <div className='row' >
-                            <div className={`col-6 p-5 ${Styles.banner_content}`}>
+                            <div className={`col-md-6 ${Styles.banner_content}`}>
                                 <h1>Movie Title</h1>
                                 {/* Ratings */}
                                 <div className={Styles.ratings}>
@@ -31,10 +31,10 @@ export const ParallaxBanner = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`col-6 ${Styles.banner_content}`}>
+                            <div className={`col-md-6 d-none d-md-block ${Styles.banner_content}`}>
                                 {/* Movie sub image */}
                                 <div className={Styles.movie_sub_image_div}>
-                                    <img src="https://picsum.photos/1920/1080?random=4" className='w-100 image-fluid' alt="" />
+                                    <img src="https://picsum.photos/1920/1080?random=4" className='w-75 image-fluid' alt="" />
                                 </div>
                             </div>
                         </div>

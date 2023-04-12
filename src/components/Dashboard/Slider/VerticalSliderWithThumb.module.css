@@ -128,11 +128,12 @@
 
     .slider__images {
         width: 100%;
+        height: 100%;
     }
 
     .slider__thumbs {
-        height: 100px;
-        width: calc(100% - 96px);
+        height: 133px;
+        width: calc(100% - 96px) !important;
         margin: 0 16px;
     }
 
