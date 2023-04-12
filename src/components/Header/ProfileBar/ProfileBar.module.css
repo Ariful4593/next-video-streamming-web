@@ -1,0 +1,20 @@
+
+
+@media screen and (min-width: 475px) and (max-width: 768px) {
+    .profile_icon {
+        display: contents !important;
+    }
+
+    .profile_icon svg {
+        width: 15px;
+        cursor: pointer;
+        margin-right: 16px;
+        color: orange
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .profile_icon {
+        display: contents
+    }
+}

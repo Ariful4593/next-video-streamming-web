@@ -1,3 +1,7 @@
+.large_device {
+    display: none;
+}
+
 .menu_part ul {
     margin: 0;
     padding: 0;
@@ -36,15 +40,21 @@
     display: none;
 }
 
+.logo_part {
+    text-align: center;
+}
+
 /* screen 1200 >  */
 @media screen and (min-width: 1200px) {
+    .large_device {
+        display: flex
+    }
+
     .small_device {
         display: none;
     }
 
-    .logo_part {
-        text-align: center;
-    }
+
 
     .menu_part {
         text-align: center;
@@ -66,13 +76,15 @@
 
 /* screen 1192 -> 1199 */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .large_device {
+        display: flex
+    }
+
     .small_device {
         display: none;
     }
 
-    .logo_part {
-        text-align: center;
-    }
+
 
     .menu_part {
         text-align: center;
@@ -96,6 +108,7 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .container {
         width: 100%;
+        max-width: 100%;
     }
 
     .large_device {
@@ -165,6 +178,7 @@
 @media screen and (min-width: 576px) and (max-width: 767px) {
     .container {
         width: 100%;
+        /* max-width: 100%; */
     }
 
     .large_device {
@@ -301,8 +315,15 @@
 }
 
 
+@media screen and (min-width: 475px) {
+    .profile_part_small_device {
+        display: none !important;
+    }
+}
 
-@media screen and (max-width: 476px) {
+
+
+@media screen and (max-width: 475px) {
     .profile_part {
         display: none;
     }
@@ -310,6 +331,10 @@
     .profile_part_sm_btn {
         display: block;
         text-align: end;
+    }
+
+    .search_not_default {
+        display: none;
     }
 
     .profile_part_sm_btn span {
@@ -323,15 +348,18 @@
         top: 84px;
         z-index: 2;
         background: #474242;
-        height: 50px;
+        height: 55px;
         padding: 10px 0px 10px 0px;
+        /* display: flex !important;
+        align-items: center;
+        justify-content: space-between; */
     }
 
     .profile_part_small_device svg {
-        width: 20px;
+        width: 14px;
         cursor: pointer;
-        margin-right: 25px;
-        color: orange
+        margin-right: 12px;
+        color: orange;
     }
 
 }
