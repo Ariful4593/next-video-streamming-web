@@ -319,3 +319,17 @@ a {
 .swiper-slide {
   margin-right: 25px !important;
 }
+
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+}
+
+.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after {
+  font-size: 18px;
+  color: #e4d7d7;
+}
+
