@@ -12,13 +12,15 @@ import Styles from "./LatestMovies.module.css";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 import { MovieThumbnailSm } from "@/ui/MovieThumbnailSm/MovieThumbnailSm";
+import { useWindowWidth } from "@/hooks/useWindowWidth";
+import { useResponsiveWidth } from "@/hooks/useResponsiveWidth";
 
 export default function LatestMoviesSlider() {
-
+    const preview = useResponsiveWidth();
     return (
         <>
             <Swiper
-                slidesPerView={4}
+                slidesPerView={preview}
                 // centeredSlides={true}
                 spaceBetween={50}
                 // pagination={{

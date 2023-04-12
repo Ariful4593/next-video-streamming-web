@@ -1,6 +1,6 @@
 import React from 'react'
-import LatestMoviesSlider from './LatestMoviesSlider'
-import Styles from './LatestMovies.module.css'
+import LatestMoviesSlider from './Slider/LatestMoviesSlider';
+import Styles from './Slider/LatestMovies.module.css'
 
 export const LatestMovies = ({ label }) => {
     return (
