@@ -61,7 +61,7 @@ export const BannerSlide = () => {
 
                                 <PlayNowBtn col='d-lg-none mt-4' />
                             </div>
-                            <div className={`col-lg-5 d-none d-lg-block ${Styles.banner_content} d-flex justify-content-center align-items-center`}>
+                            <div className={`col-lg-5 ${Styles.banner_content} ${Styles.banner_content_right}`}>
                                 {/* Video play icon with animation */}
                                 <div className={Styles.play_now_div}>
                                     <div className={Styles.video_icon}>

@@ -128,7 +128,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .play_now_div h1 {
@@ -152,6 +152,12 @@
     cursor: pointer;
 }
 
+.play_now_div .video_icon svg {
+    width: 60px;
+    height: 60px;
+    fill: #fff;
+}
+
 .banner_content {
     padding: 4rem !important;
 }
@@ -160,16 +166,30 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0px;    
+    margin: 0px;
     /* aspect-ratio: 5; */
     /* height: calc(100vh - 80px); */
 }
 
 @media screen and (min-width: 1200px) {
+    .main_banner_row {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0px;
+        height: 600px;
+    }
+
     .banner_content .movie_title {
         font-size: 60px;
         font-weight: 700;
         text-transform: uppercase;
+    }
+
+    .banner_content_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .play_now_div h1 {
@@ -182,7 +202,7 @@
         margin: 0;
     }
 
-    
+
 
 }
 
@@ -191,6 +211,12 @@
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .banner_content .movie_title {
         font-size: 60px;
+    }
+
+    .banner_content_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .banner_content p {
@@ -237,6 +263,10 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .banner_content .movie_title {
         font-size: 40px;
+    }
+
+    .banner_content_right {
+        display: none;
     }
 
     .banner_content p {
@@ -303,6 +333,10 @@
         font-size: 33px;
     }
 
+    .banner_content_right {
+        display: none;
+    }
+
     .banner_content p {
         font-size: 15px;
     }
@@ -361,6 +395,11 @@
 @media screen and (max-width: 575px) {
     .banner_content {
         padding: 1rem !important;
+    }
+
+    
+    .banner_content_right {
+        display: none;
     }
 
     .banner_content .movie_title {
