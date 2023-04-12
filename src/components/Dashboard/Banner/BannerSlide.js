@@ -21,14 +21,9 @@ export const BannerSlide = () => {
                     return <SwiperSlide key={index}
                         className={Styles.swiper_slide}
                     >
-                        <div className='row' style={{
+                        <div className={`row ${Styles.main_banner_row}`} style={{
                             backgroundImage: `url(https://picsum.photos/1920/1080?random=${item})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            aspectRatio: '5/3',
-                            // borderRadius: '10px',
-                            backgroundRepeat: 'no-repeat',
-                            margin: '0px'
+                            
                         }}
                         >
                             <div className={`col-lg-7 ${Styles.banner_content}`}>
@@ -66,7 +61,7 @@ export const BannerSlide = () => {
 
                                 <PlayNowBtn col='d-lg-none mt-4' />
                             </div>
-                            <div className={`col-lg-5 d-none d-lg-block ${Styles.banner_content}`}>
+                            <div className={`col-lg-5 d-none d-lg-block ${Styles.banner_content} d-flex justify-content-center align-items-center`}>
                                 {/* Video play icon with animation */}
                                 <div className={Styles.play_now_div}>
                                     <div className={Styles.video_icon}>

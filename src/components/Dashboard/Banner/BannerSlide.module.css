@@ -157,10 +157,29 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .banner_content h1 {
+    .banner_content .movie_title {
         font-size: 60px;
         font-weight: 700;
         text-transform: uppercase;
+    }
+
+    .play_now_div h1 {
+        font-size: 31px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        /*text space between */
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    .main_banner_row {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0px;    
+        /* aspect-ratio: 5; */
+        /* height: calc(100vh - 80px); */
     }
 
 }
