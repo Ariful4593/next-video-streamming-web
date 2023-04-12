@@ -37,7 +37,7 @@ export const BannerSlide = () => {
                                     </div>
                                 </div>
                                 {/* Description */}
-                                <div className={Styles.description}>
+                                <div className={`${Styles.description}`}>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatibus incidunt in nihil sapiente, cum magnam quibusdam molestiae debitis velit vitae minus reiciendis! Fugit dolores laudantium, sint ducimus vel nesciunt.
                                     </p>

@@ -44,17 +44,18 @@
     text-align: center;
 }
 
+#header_container {
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    background: rgba(20, 20, 20, 0.5) !important;
+    backdrop-filter: blur(0.625em);
+}
+
 /* screen 1200 >  */
 @media screen and (min-width: 1200px) {
-    #header_container {
-        width: 100%;
-        max-width: 100%;
-        position: fixed;
-        top: 0px;
-        z-index: 2;
-        background: rgba(20, 20, 20, 0.5) !important;
-        backdrop-filter: blur(0.625em);
-    }
 
     .large_device {
         display: flex
@@ -86,6 +87,7 @@
 
 /* screen 1192 -> 1199 */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+
     .large_device {
         display: flex
     }
@@ -116,11 +118,6 @@
 
 /* screen 768 -> 991 */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .container {
-        width: 100%;
-        max-width: 100%;
-    }
-
     .large_device {
         display: none;
     }
@@ -256,22 +253,6 @@
 
 /* screen 0 -> 575 */
 @media screen and (max-width: 575px) {
-    /* .container {
-        max-width: 100%;
-        width: 100%;
-    } */
-
-    /* Container navbar will be position top sticky */
-    .container {
-        width: 100%;
-        max-width: 100%;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        background-color: yellow;
-        padding: 50px;
-        font-size: 20px;
-    }
 
     .large_device {
         display: none;
