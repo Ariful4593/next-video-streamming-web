@@ -77,8 +77,6 @@ export const Header = () => {
                     </div>
                 </div>
                 {(searchBtn && type !== 'default') && <SearchBar col='col-12 col-sm-6 mt-2 search_not_default' type={type} />}
-                {/* <ProfileBar /> */}
-
                 {
                     !active && <div className={`col-3 col-sm-4 ${Styles.profile_part_sm_btn}`}>
                         <span className='text-white' onClick={() => threeDotHandler()}>...</span>

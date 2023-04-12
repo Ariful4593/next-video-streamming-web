@@ -1,5 +1,5 @@
 import React from 'react'
-import { BannerSlide } from './BannerSlide';
+import { BannerSlide } from './Banner/BannerSlide'
 export const Banner = () => {
     return (
         <div className="container-fluid p-0">

@@ -27,3 +27,17 @@
     margin-left: 5px;
 }
 
+
+
+@media screen and (max-width: 991px) {
+    .play_now_div {
+        width: 140px;
+    }
+    .play_now_div .play_now_label {
+        font-size: 0.8em;
+    }
+    .play_now_div .video_icon {
+        width: 20px;
+        height: 25px;
+    }
+}

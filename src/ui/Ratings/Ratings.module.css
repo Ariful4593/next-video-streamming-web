@@ -23,3 +23,60 @@
 .rating span {
     margin-left: 10px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .rating ul li svg {
+        width: 15px;
+    }
+
+    .rating span {
+        font-size: 15px;
+    }
+
+    .rating {
+        font-size: 15px;
+    }
+
+    .rating ul li {
+        padding: 3px;
+    }
+
+    .rating ul li svg {
+        width: 15px;
+    }
+
+    .rating span {
+        font-size: 13px;
+        margin-top: 4px;
+    }
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .rating ul li svg {
+        width: 15px;
+    }
+
+    .rating span {
+        font-size: 15px;
+    }
+
+    .rating {
+        font-size: 15px;
+    }
+
+    .rating ul li {
+        padding: 3px;
+    }
+
+    .rating ul li svg {
+        width: 15px;
+    }
+
+    .rating span {
+        font-size: 13px;
+        margin-top: 4px;
+    }
+
+}
