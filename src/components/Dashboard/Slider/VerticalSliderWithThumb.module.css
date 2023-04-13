@@ -30,9 +30,9 @@
     margin-right: 32px;
 }
 
-/* .swiper_slide_prev {
-    height: 200px !important;
-} */
+.swiper_slide_prev {
+    height: 100%;
+}
 
 .slider__prev,
 .slider__next {

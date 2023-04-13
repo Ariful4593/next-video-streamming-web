@@ -25,7 +25,7 @@ export default function Home() {
         <Banner />
         <LatestMovies label='Latest Movies' />
         <LatestMovies label='Upcoming Movies' />
-        <TopTenMovies />
+        {/* <TopTenMovies /> */}
         <LatestMovies label='Suggested For You' />
         <ParallaxBanner />
         <LatestMovies label='Trending' />

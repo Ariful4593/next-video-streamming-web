@@ -30,9 +30,6 @@
     border-radius: 10px;
     background-repeat: no-repeat;
     margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: 3s;
 }
 
