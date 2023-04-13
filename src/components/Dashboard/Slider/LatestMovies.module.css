@@ -133,6 +133,10 @@
     margin-bottom: 60px;
 }
 
+.view_all{
+    font-weight: bold;
+}
+
 /* screen < 575 */
 @media (max-width: 575px) {
     .latest_movies_header h1 {

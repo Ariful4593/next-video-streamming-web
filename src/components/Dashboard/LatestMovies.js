@@ -1,6 +1,7 @@
 import React from 'react'
 import LatestMoviesSlider from './Slider/LatestMoviesSlider';
 import Styles from './Slider/LatestMovies.module.css'
+import Link from 'next/link';
 
 export const LatestMovies = ({ label }) => {
     return (
@@ -10,7 +11,7 @@ export const LatestMovies = ({ label }) => {
                     <div className={`col-12 ${Styles.latest_movies_header}`}>
                         <h1 className='text-white'>{label}</h1>
                         {/* View all */}
-                        <button className='btn text-danger'>View All</button>
+                        <Link href={'/video/1'} className={`${Styles.view_all} text-danger`}>View All</Link>
                     </div>
                     <div className="col-12">
                         <LatestMoviesSlider />

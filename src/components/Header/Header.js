@@ -7,6 +7,7 @@ import { NavBar } from './Navbar/NavBar'
 import { ProfileBar } from './ProfileBar/ProfileBar';
 import { SearchBar } from './SearchBar/SearchBar';
 import { ProfileBarSm } from './ProfileBar/ProfileBarSm';
+import Link from 'next/link';
 export const Header = () => {
     const [active, setActive] = React.useState('');
     const [threeDot, setThreeDot] = React.useState(false);
@@ -34,14 +35,16 @@ export const Header = () => {
         <div className={`${Styles.container} container`} id={Styles.header_container}>
             <div className={`row p-3 ${Styles.large_device}`}>
                 <div className={`col-3 ${Styles.logo_part}`}>
-                    <Image
-                        className={Styles.logo}
-                        src={logo}
-                        alt="Next.js Logo"
-                        width={180}
-                        height={37}
-                        priority
-                    />
+                    <Link href={'/'}>
+                        <Image
+                            className={Styles.logo}
+                            src={logo}
+                            alt="Next.js Logo"
+                            width={180}
+                            height={37}
+                            priority
+                        />
+                    </Link>
                 </div>
                 <div className={`col-6 ${Styles.menu_part}`}>
                     <NavBar />
