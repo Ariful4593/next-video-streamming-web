@@ -18,6 +18,8 @@
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
 .submenu ul {

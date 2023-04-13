@@ -30,7 +30,7 @@
     margin-right: 32px;
 }
 
-.swiper_slide_prev{
+.swiper_slide_prev {
     height: 200px !important;
 }
 
@@ -141,5 +141,12 @@
     .slider__next {
         height: auto;
         width: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    .slider {
+        padding: 0px;
+        color: #fff;
     }
 }

@@ -136,10 +136,12 @@
 /* screen < 575 */
 @media (max-width: 575px) {
     .latest_movies_header h1 {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 700;
     }
-    .latest_movies_header button{
-        padding: 3px 5px;
+
+    .latest_movies_header button {
+        padding: 5px 10px;
+        font-size: 12px;
     }
 }

@@ -1,4 +1,4 @@
-.top_ten_movies{
+.top_ten_movies {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.top_ten_movies__header{
+.top_ten_movies__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,13 +21,13 @@
     margin-bottom: 20px;
 }
 
-.top_ten_movies__header h1{
+.top_ten_movies__header h1 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.top_ten_movies__header button{
+.top_ten_movies__header button {
     background-color: #fff;
     color: #000;
     border: none;
@@ -36,4 +36,17 @@
     font-weight: 700;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* screen < 575 */
+@media (max-width: 575px) {
+    .top_ten_movies__header h1 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+    .top_ten_movies__header button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
 }

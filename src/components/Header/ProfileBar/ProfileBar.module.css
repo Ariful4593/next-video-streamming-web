@@ -6,9 +6,9 @@
     }
 
     .profile_icon svg {
-        width: 15px;
+        width: 15px !important;
         cursor: pointer;
-        margin-right: 16px;
+        margin-right: 16px !important;
         color: orange
     }
 }
