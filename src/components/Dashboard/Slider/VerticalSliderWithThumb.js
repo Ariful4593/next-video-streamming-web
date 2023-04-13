@@ -31,7 +31,9 @@ export default function VerticalSliderWithThumb() {
                             <Swiper
                                 onSwiper={setImagesNavSlider}
                                 direction="vertical"
-                                spaceBetween={24}
+                                spaceBetween={
+                                    preview < 620 ? 0 : preview < 768 ? 32 : preview < 992 ? 1 : 90
+                                }
                                 slidesPerView={
                                     preview < 620 ? 1 : preview < 768 ? 2 : preview < 992 ? 3 : 4   
                                 }
@@ -74,7 +76,9 @@ export default function VerticalSliderWithThumb() {
                                         : null,
                             }}
                             direction="horizontal"
-                            spaceBetween={32}
+                            spaceBetween={
+                                preview < 620 ? 0 : preview < 768 ? 32 : preview < 992 ? 1 : 90
+                            }
                             mousewheel={true}
                             navigation={{
                                 nextEl: "#sliderNext",

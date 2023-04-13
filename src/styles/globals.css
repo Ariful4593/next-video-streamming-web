@@ -316,19 +316,19 @@ a {
 }
 
 
-.swiper-slide {
+/* .swiper-slide {
   margin-right: 25px !important;
-}
+} */
 
 
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
+.swiper .swiper-button-prev, .swiper .swiper-button-next, .top_ten_movies .slider__next, .top_ten_movies .slider__prev {
   border-radius: 50px;
   height: 40px;
   width: 40px;
   border: 1px solid white;
 }
 
-.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after {
+.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after, .top_ten_movies .slider__next::after, .top_ten_movies .slider__prev::after {
   font-size: 18px;
   color: #e4d7d7;
 }
