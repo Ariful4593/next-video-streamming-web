@@ -33,7 +33,7 @@ export default function LatestMoviesSlider() {
                     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => {
                         return (
                             <SwiperSlide key={index} >
-                                <MovieThumbnailSm url={`https://picsum.photos/1920/1080?random=${item}`} />
+                                <MovieThumbnailSm url={`https://picsum.photos/1920/1080?random=${item}`} video_id={item} />
                             </SwiperSlide>
                         )
                     })
