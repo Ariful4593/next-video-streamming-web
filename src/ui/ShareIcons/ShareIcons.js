@@ -10,11 +10,31 @@ export const ShareIcons = ({ position = 'horizontal' }) => {
         <div className={Styles.share_icons_section}>
             <ul className={isPosition}>
                 <li>
-                    <span>
+                    <span className={Styles.media_section}>
                         <Link href={'/'}>
                             <FontAwesomeIcon icon={faShareNodes} />
                         </Link>
                     </span>
+                    {/* If hover, show the social media icon */}
+                    <div className={Styles.social_media_icons}>
+                        <ul>
+                            <li>
+                                <Link href={'/'}>
+                                    <FontAwesomeIcon icon={faShareNodes} />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={'/'}>
+                                    <FontAwesomeIcon icon={faShareNodes} />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={'/'}>
+                                    <FontAwesomeIcon icon={faShareNodes} />
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
                     <span>

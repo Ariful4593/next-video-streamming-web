@@ -51,3 +51,12 @@
     color: red;
     font-size: 13px;
 }
+
+
+.social_media_icons {
+    display: none
+}
+
+.media_section:hover .social_media_icons {
+    display: block;
+}
