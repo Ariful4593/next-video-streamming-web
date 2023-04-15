@@ -1,0 +1,38 @@
+.tab_section{
+    padding: 20px;
+}
+
+
+.main_section ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main_section ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: white;
+    padding: 25px 25px 0px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main_section ul li.active {
+    border-bottom: 2px solid #fff;
+    background-color: #191919;
+}
+/* .main_section ul li:hover {
+    border-bottom: 2px solid #fff;
+    background-color: red;
+} */
+
+.tab_content{
+    padding: 20px;
+}
+
+.tab_content p{
+    /* font-size: 20px; */
+    color: white;
+}

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { VideoDetails } from '@/components/VideoDetails/VideoDetails';
+import { CommentAndDescription } from '@/ui/CommentAndDescription/CommentAndDescription';
 const VideoInfo = () => {
     const router = useRouter();
     const { id } = router.query;
@@ -18,6 +19,8 @@ const VideoInfo = () => {
             <main>
                 <Header />
                 <VideoDetails />
+
+                <CommentAndDescription />
             </main>
         </>
     )

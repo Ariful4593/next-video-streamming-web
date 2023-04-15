@@ -4,6 +4,7 @@ import { Ratings } from '@/ui/Ratings/Ratings';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { ShareIcons } from '@/ui/ShareIcons/ShareIcons';
+import { Tags } from '@/ui/Tags/Tags';
 export const VideoDetails = () => {
     return (
         <section className={Styles.video_details_section}>
@@ -38,6 +39,8 @@ export const VideoDetails = () => {
                         </div>
 
                         <ShareIcons />
+
+                        <Tags />
                     </div>
                 </div>
             </div>
