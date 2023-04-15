@@ -1,7 +1,9 @@
 import React from 'react';
 import Styles from './VideoDetails.module.css';
 import { Ratings } from '@/ui/Ratings/Ratings';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { ShareIcons } from '@/ui/ShareIcons/ShareIcons';
 export const VideoDetails = () => {
     return (
         <section className={Styles.video_details_section}>
@@ -23,16 +25,19 @@ export const VideoDetails = () => {
                         </div>
                         {/* Thriller */}
                         <div className={Styles.video_genere}>
-                            <h3 className='text-white'>Thriller</h3>
+                            <h3 className='text-danger'>Thriller</h3>
                         </div>
                         <div className='d-flex flex-wrap align-items-center text-white text-detail flex-wrap mb-4'>
                             <span className='badge badge-secondary font-size-16'>G</span>
-                            <span className='ml-3 font-Weight-500 genres-info'>1hr : 30m</span>
-                            <span className='trending-year trending-year-list font-Weight-500 genres-info'>Apr 2023</span>
-                            <span className='trending-year trending-year-list single-view-count font-Weight-500 genres-info'>
-                                <i className="fas fa-eye"></i> 1.2M views
+                            <span className={`${Styles.genres_info} ml-3 font-Weight-500 `}>1hr : 30m</span>
+                            <span className={`${Styles.trending_year} font-Weight-500 genres-info`}>Apr 2023</span>
+                            <span className={`${Styles.trending_year} ${Styles.total_views} font-Weight-500 genres-info`}>
+                                <FontAwesomeIcon icon={faEye} className='me-2' />
+                                1.2M views
                             </span>
                         </div>
+
+                        <ShareIcons />
                     </div>
                 </div>
             </div>

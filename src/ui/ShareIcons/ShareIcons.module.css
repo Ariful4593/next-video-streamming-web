@@ -1,0 +1,53 @@
+.share_icons_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.share_icons_section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.share_icons_section_horizontal li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.30);
+    width: 2.813em;
+    height: 2.813em;
+    border-radius: 30px;
+    position: relative;
+}
+
+.share_icons_section_vertical li {
+    list-style: none;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.30);
+    width: 2.813em;
+    height: 2.813em;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.share_icons_section li span {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background-color: #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 6px;
+    text-align: center;
+    padding: 2px;
+}
+
+.share_icons_section svg {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    color: red;
+    font-size: 13px;
+}
