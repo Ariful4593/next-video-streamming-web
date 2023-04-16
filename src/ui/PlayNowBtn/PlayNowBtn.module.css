@@ -16,6 +16,10 @@
     letter-spacing: 1px;
 }
 
+.play_now_div .play_now_label a:hover {
+    color: #fff;
+}
+
 .play_now_div .video_icon {
     width: 25px;
     height: 30px;

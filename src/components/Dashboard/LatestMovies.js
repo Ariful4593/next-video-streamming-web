@@ -11,7 +11,7 @@ export const LatestMovies = ({ label }) => {
                     <div className={`col-12 ${Styles.latest_movies_header}`}>
                         <h1 className='text-white'>{label}</h1>
                         {/* View all */}
-                        <Link href={'/video/1'} className={`${Styles.view_all} text-danger`}>View All</Link>
+                        <Link href={'/videos'} className={`${Styles.view_all} text-danger`}>View All</Link>
                     </div>
                     <div className="col-12">
                         <LatestMoviesSlider />

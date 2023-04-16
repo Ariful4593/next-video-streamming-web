@@ -10,7 +10,7 @@ export const MovieGeneres = () => {
                     {
                         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => {
                             return <div className='col-md-4 col-lg-3 col-sm-6 mb-4'>
-                                <MovieThumbnailSm title={`Movie Title -${item}`} url={`https://picsum.photos/1920/1080?random=${item}`} />
+                                <MovieThumbnailSm title={`Movie Title -${item}`} url={`https://picsum.photos/1920/1080?random=${item}`} videoId={item} />
                             </div>
                         })
                     }
