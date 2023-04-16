@@ -31,6 +31,10 @@
     margin-left: 5px;
 }
 
+.play_now_div .play_now_label a:hover{
+    color: #fff;
+}
+
 
 
 @media screen and (max-width: 991px) {

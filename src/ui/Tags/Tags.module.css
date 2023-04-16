@@ -1,0 +1,24 @@
+.tags_body ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tags_body li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.primary_li {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    font-weight: 700;
+    color: red !important;
+}
+
+.tags_body li a:hover {
+    color: white !important;
+}

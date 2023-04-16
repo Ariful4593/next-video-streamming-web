@@ -1,0 +1,35 @@
+.video_details_section {
+    margin-bottom: 20px;
+}
+
+
+.video_description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.genres_info{
+    font-size: 20px;
+}
+
+.trending_year{
+    padding-left: 10px;
+    /* padding-right: 10px; */
+    font-size: 20px;
+}
+
+.trending_year::before{
+    content: "•";
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.total_views svg{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}

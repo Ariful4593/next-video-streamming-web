@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from './MovieThumbnailSm.module.css'
 import { PlayNowBtn } from '../PlayNowBtn/PlayNowBtn'
-export const MovieThumbnailSm = ({ url, title = 'Movie Title', videoId = 1 }) => {
+export const MovieThumbnailSm = ({ url, title = 'Movie Title', video_id }) => {
     return (
         <div className={`${Styles.movie_row}`} style={{
             backgroundImage: `url(${url})`,
@@ -13,7 +13,7 @@ export const MovieThumbnailSm = ({ url, title = 'Movie Title', videoId = 1 }) =>
                     <div className={Styles.movie_length}>
                         <span>2h : 30m</span>
                     </div>
-                    <PlayNowBtn videoId={videoId} />
+                    <PlayNowBtn video_id={video_id} />
                 </div>
             </div>
         </div>

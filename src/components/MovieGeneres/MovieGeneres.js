@@ -9,8 +9,8 @@ export const MovieGeneres = () => {
                     <h3 className={Styles.generes_title}>Movie Generes</h3>
                     {
                         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => {
-                            return <div className='col-md-4 col-lg-3 col-sm-6 mb-4'>
-                                <MovieThumbnailSm title={`Movie Title -${item}`} url={`https://picsum.photos/1920/1080?random=${item}`} videoId={item} />
+                            return <div className='col-md-4 col-lg-3 col-sm-6 mb-4' key={index}>
+                                <MovieThumbnailSm title={`Movie Title -${item}`} url={`https://picsum.photos/1920/1080?random=${item}`} video_id={item} />
                             </div>
                         })
                     }

@@ -5,7 +5,7 @@ import { Header } from '@/components/Header/Header'
 import { Banner } from '@/components/Dashboard/Banner'
 import 'swiper/css';
 import { LatestMovies } from '@/components/Dashboard/LatestMovies';
-import { TopTenMovies } from '@/components/Dashboard/TopTenMovies/TopTenMovies';
+// import { TopTenMovies } from '@/components/Dashboard/TopTenMovies/TopTenMovies';
 import { ParallaxBanner } from '@/components/Dashboard/Banner/ParallaxBanner';
 import { Footer } from '@/components/Footer/Footer';
 
