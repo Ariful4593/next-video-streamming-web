@@ -8,9 +8,7 @@ export const ProfileBar = ({ searchBtnHandler }) => {
         <div className={`col-4 col-sm-6 text-end ${Styles.profile_icon} ${Styles.search_field}`}>
             <FontAwesomeIcon className='icon' icon={faSearch} onClick={() => searchBtnHandler('default')} />
             <FontAwesomeIcon className='icon' icon={faBell} />
-            <FontAwesomeIcon className='icon' icon={faUser} />
-            
-
+            <FontAwesomeIcon className='icon' icon={faUser} />          
         </div>
     )
 }

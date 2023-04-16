@@ -51,4 +51,11 @@
     .profile_icon {
         display: contents
     }
+
+    .user_profile_dropdown svg {
+        width: 15px;
+        cursor: pointer;
+        margin-right: 10px;
+        fill: red !important;
+    }
 }
