@@ -40,7 +40,7 @@ export const Footer = () => {
                                 <div className={Styles.textwidget}>
                                     <p>
                                         <small>
-                                            © 2023 <a href="https://www.technextit.com/" target="_blank" rel="noreferrer">STREAMIT</a>  All Rights Reserved.
+                                            © 2023 <a href="/" target="_blank" rel="noreferrer">STREAMIT</a>  All Rights Reserved.
                                         </small>
                                     </p>
                                 </div>
@@ -96,7 +96,7 @@ export const Footer = () => {
                     <div className="col-xl-12 text-center">
                         <p>
                             <small>
-                                © 2023 <a href="https://www.technextit.com/" target="_blank" rel="noreferrer">STREAMIT</a>  All Rights Reserved.
+                                © 2023 <a href="/" target="_blank" rel="noreferrer">STREAMIT</a>  All Rights Reserved.
                             </small>
                         </p>
                     </div>

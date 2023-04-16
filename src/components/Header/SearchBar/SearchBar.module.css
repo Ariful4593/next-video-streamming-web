@@ -27,7 +27,7 @@
     width: 100%;
     inset: 0;
     background: var(--input-bg-color);
-    border-radius: 30px;
+    /* border-radius: 30px; */
     height: 100%;
     z-index: -1;
     pointer-events: none;
@@ -125,5 +125,78 @@
 @media screen and (max-width: 475px) {
     .search_not_default {
         display: none;
+    }
+}
+
+
+/* Screen 992 -> */
+@media screen and (min-width: 992px) {
+    .search_bar_form label {
+        flex-direction: row-reverse;
+    }
+
+    .search_bar_form input {
+        width: 22%
+    }
+
+    .fancy_bg {
+        position: absolute;
+        width: 26%;
+        inset: 0;
+        background: var(--input-bg-color);
+        border-radius: 0 !important;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        left: 73%;
+    }
+}
+
+/* Screen 768 -> 991 */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .search_bar_form label {
+        flex-direction: row-reverse;
+    }
+
+    .search_bar_form input {
+        width: 33%
+    }
+
+    .fancy_bg {
+        position: absolute;
+        width: 38%;
+        inset: 0;
+        background: var(--input-bg-color);
+        border-radius: 0 !important;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        left: 60%;
+    }
+}
+
+/* Screen 575 -> 767 */
+@media screen and (min-width: 575px) and (max-width: 767px) {
+    .search_bar_form label {
+        flex-direction: row-reverse;
+    }
+
+    .search_bar_form input {
+        width: 41%
+    }
+
+    .fancy_bg {
+        position: absolute;
+        width: 47%;
+        inset: 0;
+        background: var(--input-bg-color);
+        border-radius: 0 !important;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        left: 50%;
     }
 }
