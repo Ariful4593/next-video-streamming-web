@@ -2,9 +2,10 @@ import React from 'react'
 import Styles from './Ratings.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-export const Ratings = ({ ratings = 4, mp }) => {
+export const Ratings = ({ ratings = 4, mp, customStyle }) => {
+    const style = customStyle ? customStyle : Styles.rating
     return (
-        <div className={`${Styles.rating} ${mp}`}>
+        <div className={`${style} ${mp}`}>
             <ul>
                 {
                     [...Array(ratings)].map((_, i) => (

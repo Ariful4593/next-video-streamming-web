@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { VideoDetails } from '@/components/VideoDetails/VideoDetails';
 import { CommentAndDescription } from '@/ui/CommentAndDescription/CommentAndDescription';
+import { LatestMovies } from '@/components/Dashboard/LatestMovies';
+import { Footer } from '@/components/Footer/Footer';
 const VideoInfo = () => {
     const router = useRouter();
     const { id } = router.query;
@@ -21,6 +23,12 @@ const VideoInfo = () => {
                 <VideoDetails />
 
                 <CommentAndDescription />
+                <div className="row">
+                    <div className="col-12">
+                        <LatestMovies label='Upcoming' />
+                    </div>
+                </div>
+                <Footer />
             </main>
         </>
     )
