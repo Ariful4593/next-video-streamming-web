@@ -22,3 +22,11 @@
 .tags_body li a:hover {
     color: white !important;
 }
+
+/* Screen < 576 */
+
+@media (max-width: 575px) {
+    .tags_body li {
+        font-size: 14px;
+    }
+}

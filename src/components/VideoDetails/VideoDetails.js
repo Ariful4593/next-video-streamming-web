@@ -8,7 +8,7 @@ import { Tags } from '@/ui/Tags/Tags';
 export const VideoDetails = () => {
     return (
         <section className={Styles.video_details_section}>
-            <div className="container">
+            <div className={`container ${Styles.container}`}>
                 <div className="row">
                     <div className="col-12">
                         <div className={Styles.video_player} >
@@ -19,7 +19,7 @@ export const VideoDetails = () => {
                             ></video>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-7 col-lg-6">
                         <div className={Styles.video_description}>
                             <h1 className='text-white m-0'>Video Title</h1>
                             <Ratings mp={'mt-2 ml-2'} />
@@ -41,6 +41,16 @@ export const VideoDetails = () => {
                         <ShareIcons />
 
                         <Tags />
+                    </div>
+                    <div className="col-md-5 col-lg-6 d-flex justify-content-center align-items-center">
+                        <div className={Styles.video_trailer_section}>
+                            <div className={Styles.video_trailer}>
+                                <div className={Styles.video_trailer_img}>
+                                    <img className='' src="https://picsum.photos/1920/1080?random=1" alt="" />
+                                    <span>Trailer Link</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

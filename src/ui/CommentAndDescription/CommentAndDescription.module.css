@@ -168,3 +168,38 @@
     color: red !important;
     transition: 0.5s ease-in-out;
 }
+
+/* Screen  768 -> 991 */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .tab_section ul li{
+        padding: 20px;
+    }
+}
+
+/* Screen  576 -> 767 */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .tab_section ul li{
+        padding: 20px;
+    }
+}
+
+/* Screen  0 -> 575 */
+
+@media (max-width: 575px) {
+    .tab_section ul{
+        background: linear-gradient(90.06deg, rgba(20, 20, 20, 0) 1.66%, #0f0f0f 43.64%, rgba(20, 20, 20, 0) 89.28%);
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .tab_section ul li{
+        padding: 10px;
+        font-size: 1.25em;
+    }
+
+    .discription_part{
+        margin-bottom: 0;
+    }
+}

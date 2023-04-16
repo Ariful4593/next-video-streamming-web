@@ -59,13 +59,13 @@ export const CommentAndDescription = () => {
 
                                                         {/* Name and Email Feild */}
                                                         <div className={`row ${Styles.input_feild}`}>
-                                                            <div className="col-6">
+                                                            <div className="col-sm-6">
                                                                 <div className={`form-group`}>
                                                                     <label htmlFor="name">Name*</label>
                                                                     <input type="text" className='form-control shadow-none' required />
                                                                 </div>
                                                             </div>
-                                                            <div className="col-6">
+                                                            <div className="col-sm-6">
                                                                 <div className="form-group">
                                                                     <label htmlFor="email">Email*</label>
                                                                     <input type="email" className='form-control shadow-none' required />
