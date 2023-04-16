@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faBell, faUser } from '@fortawesome/free-solid-svg-icons'
+
 import Styles from './ProfileBar.module.css';
 export const ProfileBar = ({ searchBtnHandler }) => {
     return (
@@ -8,6 +9,8 @@ export const ProfileBar = ({ searchBtnHandler }) => {
             <FontAwesomeIcon className='icon' icon={faSearch} onClick={() => searchBtnHandler('default')} />
             <FontAwesomeIcon className='icon' icon={faBell} />
             <FontAwesomeIcon className='icon' icon={faUser} />
+            
+
         </div>
     )
 }

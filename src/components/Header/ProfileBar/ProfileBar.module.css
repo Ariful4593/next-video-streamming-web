@@ -1,4 +1,38 @@
+.user_profile_dropdown {
+    position: relative;
+    top: 5px;
+    right: 0;
+    background-color: #000000;
+    border-radius: 5px;
+    z-index: 18;
+}
 
+.user_profile_dropdown ul {
+    margin: 0;
+    padding: 10px;
+    text-align: start;
+    position: absolute;
+    background: #191919;
+    width: 260px;
+}
+
+.user_profile_dropdown li {
+    list-style: none;
+    padding: 5px;
+    width: 200px;
+    color: white;
+}
+
+.user_profile_dropdown li a {
+    text-decoration: none;
+    color: white;
+}
+
+.user_profile_dropdown li svg{
+    margin-right: 10px;
+    columns: white;
+    fill: white;
+}
 
 @media screen and (min-width: 475px) and (max-width: 768px) {
     .profile_icon {
