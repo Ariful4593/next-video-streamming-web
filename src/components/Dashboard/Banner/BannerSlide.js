@@ -9,7 +9,12 @@ import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import Styles from './BannerSlide.module.css'
 import { Ratings } from '@/ui/Ratings/Ratings';
 import { PlayNowBtn } from '@/ui/PlayNowBtn/PlayNowBtn';
+import CenteredModal from '@/ui/Modal/CenteredModal';
 export const BannerSlide = () => {
+
+    const [open, setOpen] = React.useState(false)
+    const [play, setPlay] = React.useState(false)
+
     return (
         <Swiper
             navigation={true}
@@ -23,7 +28,7 @@ export const BannerSlide = () => {
                     >
                         <div className={`row ${Styles.main_banner_row}`} style={{
                             backgroundImage: `url(https://picsum.photos/1920/1080?random=${item})`,
-                            
+
                         }}
                         >
                             <div className={`col-lg-7 ${Styles.banner_content}`}>
@@ -65,10 +70,13 @@ export const BannerSlide = () => {
                                 {/* Video play icon with animation */}
                                 <div className={Styles.play_now_div}>
                                     <div className={Styles.video_icon}>
-                                        <FontAwesomeIcon icon={faPlayCircle} />
+                                        <FontAwesomeIcon icon={faPlayCircle} onClick={() => setOpen(true)} />
                                     </div>
                                     <h1>Watch Trailer</h1>
                                 </div>
+                                {
+                                    open && <CenteredModal show={open} onHide={() => setOpen(false)} />
+                                }
                             </div>
                         </div>
                     </SwiperSlide>

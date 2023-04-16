@@ -333,3 +333,11 @@ a {
   color: #e4d7d7;
 }
 
+
+.modal-backdrop.show{
+  opacity: 0 !important;
+  /* backdrop-filter: blur(0.625em); */
+}
+.modal{
+  backdrop-filter: blur(0.625em) !important
+}
