@@ -3,7 +3,7 @@ import LatestMoviesSlider from './Slider/LatestMoviesSlider';
 import Styles from './Slider/LatestMovies.module.css'
 import Link from 'next/link';
 
-export const LatestMovies = ({ label }) => {
+export const LatestMovies = ({ label='This is label' }) => {
     return (
         <div className={Styles.latest_movies}>
             <div className="container">

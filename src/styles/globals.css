@@ -1,3 +1,12 @@
+/* @import '../../public/assets/css/owl.carousel.min.css'; */
+@import '../../public/assets/css/bootstrap.min.css';
+@import '../../public/assets/css/typography.css';
+@import '../../public/assets/css/style.css';
+@import '../../public/assets/css/responsive.css';
+@import '../../public/assets/css/swiper.min.css';
+@import '../../public/assets/css/swiper.css';
+@import '../../public/assets/css/custom.css';
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -324,13 +333,17 @@ a {
 .swiper .swiper-button-prev, .swiper .swiper-button-next, .top_ten_movies .slider__next, .top_ten_movies .slider__prev {
   border-radius: 50px;
   height: 40px;
-  width: 40px;
+  width: 40px !important;
   border: 1px solid white;
+  background: none !important;
+  top: 50% !important;
 }
 
 .swiper .swiper-button-prev::after, .swiper .swiper-button-next::after, .top_ten_movies .slider__next::after, .top_ten_movies .slider__prev::after {
   font-size: 18px;
   color: #e4d7d7;
+  background: none !important;
+  top: 50% !important;
 }
 
 
